@@ -1,0 +1,44 @@
+version: 0.0.1
+type: plugin
+author: codly
+name: trace-dify
+label:
+  en_US: trace-dify
+  ja_JP: trace-dify
+  zh_Hans: trace-dify
+  pt_BR: trace-dify
+description:
+  en_US: trace plugin
+  ja_JP: trace plugin
+  zh_Hans: trace plugin
+  pt_BR: trace plugin
+icon: icon.svg
+resource:
+  memory: 268435456
+  permission:
+    tool:
+      enabled: true
+    model:
+      enabled: true
+      llm: true
+      text_embedding: false
+      rerank: false
+      tts: false
+      speech2text: false
+      moderation: false
+plugins:
+  agent_strategies:
+    - provider/function_calling.yaml
+meta:
+  version: 0.0.1
+  arch:
+    - amd64
+    - arm64
+  runner:
+    language: python
+    version: "3.12"
+    entrypoint: main
+  minimum_dify_version: null
+created_at: 2025-05-19T10:37:10.876791+08:00
+privacy: PRIVACY.md
+verified: false

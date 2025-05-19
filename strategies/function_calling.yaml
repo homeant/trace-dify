@@ -1,0 +1,26 @@
+identity:
+  name: trace-dify
+  author: codly
+  label:
+    en_US: TraceDify
+description:
+  en_US: TraceDify
+parameters:
+  - name: model
+    type: model-selector
+    scope: tool-call&llm
+    required: true
+    label:
+      en_US: Model
+      zh_Hans: 模型
+      pt_BR: Model
+  - name: tools
+    type: array[tools]
+    required: true
+    label:
+      en_US: Tools list
+      zh_Hans: 工具列表
+      pt_BR: Tools list
+extra:
+  python:
+    source: strategies/function_calling.py

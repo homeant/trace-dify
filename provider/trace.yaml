@@ -1,0 +1,13 @@
+identity:
+  author: Codly
+  name: Trace
+  label:
+    en_US: Trace
+  description:
+    en_US: Trace
+  icon: icon.svg
+strategies:
+  - strategies/function_calling.yaml
+#extra:
+#  python:
+#    source: provider/trace.py
