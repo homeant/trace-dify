@@ -1,6 +1,6 @@
 identity:
   author: Codly
-  name: Trace
+  name: trace
   label:
     en_US: Trace
   description:
@@ -8,6 +8,6 @@ identity:
   icon: icon.svg
 strategies:
   - strategies/function_calling.yaml
-#extra:
-#  python:
-#    source: provider/trace.py
+extra:
+  python:
+    source: provider/trace.py

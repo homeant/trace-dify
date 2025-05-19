@@ -1,17 +1,17 @@
 version: 0.0.1
 type: plugin
-author: codly
-name: trace-dify
+author: Codly
+name: trace
 label:
-  en_US: trace-dify
-  ja_JP: trace-dify
-  zh_Hans: trace-dify
-  pt_BR: trace-dify
+  en_US: Trace
+  ja_JP: Trace
+  zh_Hans: Trace
+  pt_BR: Trace
 description:
-  en_US: trace plugin
-  ja_JP: trace plugin
-  zh_Hans: trace plugin
-  pt_BR: trace plugin
+  en_US: Trace
+  ja_JP: Trace
+  zh_Hans: Trace
+  pt_BR: Trace
 icon: icon.svg
 resource:
   memory: 268435456
@@ -28,7 +28,7 @@ resource:
       moderation: false
 plugins:
   agent_strategies:
-    - provider/function_calling.yaml
+    - provider/trace.yaml
 meta:
   version: 0.0.1
   arch:

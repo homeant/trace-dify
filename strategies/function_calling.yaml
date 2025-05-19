@@ -1,10 +1,10 @@
 identity:
-  name: trace-dify
-  author: codly
+  name: trace
+  author: Codly
   label:
-    en_US: TraceDify
+    en_US: Trace
 description:
-  en_US: TraceDify
+  en_US: Trace
 parameters:
   - name: model
     type: model-selector
